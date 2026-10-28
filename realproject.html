@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Projects</title>
+    <link rel="stylesheet" href="/src/output.css" />
+  </head>
+  <body class="m-0 min-h-dvh overflow-x-hidden bg-[#090909] bg-[url('/assets/img2.png')] bg-cover bg-center bg-no-repeat bg-fixed text-white">
+    <main class="flex min-h-dvh flex-col bg-black/50">
+      <header class="relative mx-auto flex w-full max-w-7xl items-center justify-between gap-4 px-6 py-4 sm:px-8 sm:py-5">
+        <a href="/index.html" class="text-lg font-bold tracking-tight">tenebraet.dev</a>
+        <nav aria-label="Main navigation" class="hidden items-center gap-6 font-bold text-sm capitalize text-white/80 md:flex">
+          <a href="/index.html#about" class="transition hover:text-white">Home</a>
+          <a href="/contact.html" class="transition hover:text-white">Contact</a>
+          <!-- <a href="/project.html" class="transition hover:text-white">Check this out...</a> -->
+          <a href="/realproject.html" aria-current="page" class="underline underline-offset-4 decoration-2 transition hover:text-white">Projects</a>
+        </nav>
+
+        <div class="md:hidden">
+          <input id="mobile-menu" type="checkbox" class="peer sr-only" />
+          <label
+            for="mobile-menu"
+            aria-label="Toggle navigation menu"
+            class="relative z-50 flex size-11 cursor-pointer flex-col items-center justify-center gap-1.5 rounded-full border border-white/30 transition hover:bg-white hover:text-black">
+            <span class="h-0.5 w-5 bg-current"></span>
+            <span class="h-0.5 w-5 bg-current"></span>
+            <span class="h-0.5 w-5 bg-current"></span>
+          </label>
+
+          <label
+            for="mobile-menu"
+            aria-label="Close navigation menu"
+            class="fixed inset-0 z-40 invisible pointer-events-none cursor-pointer bg-black/60 opacity-0 transition-opacity peer-checked:visible peer-checked:pointer-events-auto peer-checked:opacity-100"
+          ></label>
+          <nav
+            aria-label="Mobile navigation"
+            class="fixed right-0 top-0 z-40 flex h-dvh w-[min(20rem,85vw)] translate-x-full flex-col gap-2 border-l border-white/15 bg-[#090909] px-8 pb-8 pt-24 text-lg capitalize text-white/80 shadow-2xl transition-transform duration-300 ease-out peer-checked:translate-x-0"
+          >
+            <a href="/index.html#about" class="rounded-lg px-3 py-3 transition hover:bg-white/10 hover:text-white">Home</a>
+            <a href="/contact.html" class="rounded-lg px-3 py-3 transition hover:bg-white/10 hover:text-white">Contact</a>
+            <a href="/realproject.html" aria-current="page" class="rounded-lg px-3 py-3 underline underline-offset-4 decoration-2 transition hover:bg-white/10 hover:text-white">Projects</a>
+          </nav>
+        </div>
+      </header>
+
+      <section class="mx-auto flex w-full max-w-7xl flex-1 items-center px-6 py-9 sm:px-8 sm:py-16">
+        <div class="max-w-3xl">
+          <p class="mb-3 text-xs font-bold tracking-[0.2em] text-gray-300 sm:text-sm">PORTFOLIO</p>
+          <h1 class="text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl md:text-6xl">My Projects</h1>
+          <p class="mt-5 max-w-2xl text-lg leading-7 text-white/75 sm:text-xl sm:leading-8">
+            A collection of projects, experiments, and ideas that showcase my skills and growth as a developer.
+          </p>
+        </div>
+      </section>
+      <section class="mx-auto w-full max-w-7xl px-6 pb-12 sm:px-8 sm:pb-16">
+        <h2 class="mb-6 text-center text-3xl font-extrabold capitalize">Projects</h2>
+        <div class="grid w-full grid-cols-3 gap-2 sm:gap-6">
+          <!-- FIRST CHILD -->
+          <a href="/project.html"><div class="flex min-h-48 flex-col items-center justify-center gap-3 rounded-3xl border border-white/15 bg-white/3 p-2 text-center text-white/70 backdrop-blur-xl sm:p-4">
+            <svg aria-hidden="true" class="size-7 text-white/35" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              
+            </svg>
+            <p class="text-xs font-medium sm:text-sm">Nothing yet</p>
+          </div></a>
+
+          <!-- SECOND CHILD -->
+          <a href="/project.html"><div class="flex min-h-48 flex-col items-center justify-center gap-3 rounded-3xl border border-white/15 bg-white-3 p-2 text-center text-white/70 backdrop-blur-xl sm:p-4">
+            <svg aria-hidden="true" class="size-7 text-white/35" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            </svg>
+            <p class="text-xs font-medium sm:text-sm">Nothing yet</p>
+          </div></a>
+
+          <!-- THIRD CHILD -->
+          <a href="/project.html"><div class="flex min-h-48 flex-col items-center justify-center gap-3 rounded-3xl border border-white/15 bg-white/3 p-2 text-center text-white/70 backdrop-blur-xl sm:p-4">
+            <svg aria-hidden="true" class="size-7 text-white/35" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              
+            </svg>
+            <p class="text-xs font-medium sm:text-sm">Nothing yet</p>
+          </div></a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

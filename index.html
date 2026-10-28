@@ -1,0 +1,96 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tenebraet.dev</title>
+    <link rel="stylesheet" href="/src/output.css" />
+  </head>
+
+  <body class="m-0 min-h-dvh overflow-x-hidden bg-[#090909] bg-[url('/assets/img2.png')] bg-cover bg-center bg-no-repeat bg-fixed text-white">
+    <main class="flex min-h-dvh flex-col bg-black/50">
+
+      <!-- HEADER  -->
+
+      <header class="relative mx-auto flex w-full max-w-7xl items-center justify-between gap-4 px-6 py-4 sm:px-8 sm:py-5">
+        <!-- LOGO -->
+        <P href="#" class="text-lg font-bold tracking-tight">tenebraet.dev</P>
+        <!-- LOGO -->
+        <nav aria-label="Main navigation" class="hidden items-center gap-6 text-sm capitalize text-white/80 font-bold md:flex">
+          <a href="/index.html" aria-current="page" class="underline underline-offset-4 decoration-2 transition hover:text-white">Home</a>
+          <a href="/contact.html" class="transition hover:text-white">Contact</a>
+          <!-- <a href="/project.html" class="transition hover:text-white">Check this out...</a> -->
+          <a href="/realproject.html" class="transition hover:text-white">Projects</a>
+        </nav>
+
+        <div class="md:hidden">
+          <input id="mobile-menu" type="checkbox" class="peer sr-only" />
+          <label
+            for="mobile-menu"
+            aria-label="Toggle navigation menu"
+            class="relative z-50 flex size-11 cursor-pointer flex-col items-center justify-center gap-1.5 rounded-full border border-white/30 transition hover:bg-white hover:text-black">
+            <span class="h-0.5 w-5 bg-current"></span>
+            <span class="h-0.5 w-5 bg-current"></span>
+            <span class="h-0.5 w-5 bg-current"></span>
+          </label>
+
+          <label
+            for="mobile-menu"
+            aria-label="Close navigation menu"
+            class="fixed inset-0 z-40 invisible pointer-events-none cursor-pointer bg-black/60 opacity-0 transition-opacity peer-checked:visible peer-checked:pointer-events-auto peer-checked:opacity-100"
+          ></label>
+          <nav
+            aria-label="Mobile navigation"
+            class="fixed right-0 top-0 z-40 flex h-dvh w-[min(20rem,85vw)] translate-x-full flex-col gap-2 border-l border-white/15 bg-[#090909] px-8 pb-8 pt-24 text-lg capitalize text-white/80 shadow-2xl transition-transform duration-300 ease-out peer-checked:translate-x-0"
+          >
+            <a href="/index.html" aria-current="page" class="rounded-lg px-3 py-3 underline underline-offset-4 decoration-2 transition hover:bg-white/10 hover:text-white">Home</a>
+            <a href="/contact.html" class="rounded-lg px-3 py-3 transition hover:bg-white/10 hover:text-white">Contact</a>
+            <!-- <a href="/project.html" class="rounded-lg px-3 py-3 transition hover:bg-white/10 hover:text-white">Check this out...</a> -->
+            <a href="/realproject.html" class="rounded-lg px-3 py-3 transition hover:bg-white/10 hover:text-white">Projects</a>
+          </nav>
+        </div>
+      </header>
+
+
+      <!-- HEADER END -->
+
+
+      <section id="about"class="mx-auto flex w-full max-w-7xl flex-1 items-center px-6 py-8 sm:px-8 sm:py-10">
+        <div class="w-full max-w-2xl">
+          <p class="mb-3 text-xs font-bold tracking-[0.2em] text-gray-300 sm:mb-4 sm:text-sm">
+            ABOUT ME
+          </p>
+
+          <h1
+            class="text-3xl font-semibold leading-tight tracking-tight text-white sm:text-5xl"
+          >
+            I’m a tech enthusiast and Computer Science student in Lagos.
+          </h1>
+
+          <p class="mt-4 max-w-xl text-base leading-6 font-bold text-white/75 sm:mt-6 sm:text-lg sm:leading-7">
+            I’m passionate about building for the web. I love creating simple,
+            beautiful interfaces that solve real problems. I’m currently
+            learning WordPress and building in public.
+          </p>
+
+          <p class="mt-3 max-w-xl text-base leading-6 text-white/75 sm:mt-4 sm:text-lg sm:leading-7 font-bold">
+            I’m looking for mentorship, an internship, and teams to build with.
+          </p>
+
+          <div class=" mt-5 sm:mt-7">
+            <button class="inline-flex min-h-12 items-center justify-center rounded-full border bg-transparent backdrop-blur-xl border-white/70 px-6 py-3 text-sm font-bold text-white transition hover:bg-white hover:font-bold hover:text-black">
+              <a href="/realproject.html">View my projects</a>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <footer
+        id=""
+        class="mx-auto text-right w-full max-w-7xl px-6 py-4 text-sm text-white/60 sm:px-8 sm:py-5">
+        Lagos, Nigeria
+      </footer>
+    </main>
+  </body>
+</html>

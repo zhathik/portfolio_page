@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reach Me</title>
+    <link rel="stylesheet" href="/src/output.css" />
+  </head>
+  <body class="m-0 min-h-dvh overflow-x-hidden bg-[#090909] bg-[url('/assets/img2.png')] bg-cover bg-center bg-no-repeat bg-fixed text-white">
+    <main class="flex min-h-dvh flex-col bg-black/50">
+      <header class="relative mx-auto flex w-full max-w-7xl items-center justify-between gap-4 px-6 py-4 sm:px-8 sm:py-5">
+        <a href="/index.html" class="text-lg font-bold tracking-tight">tenebraet.dev</a>
+
+        <nav aria-label="Main navigation" class="hidden items-center gap-6 text-sm capitalize text-white/80 font-bold md:flex">
+          <a href="/index.html#about" class="transition hover:text-white">Home</a>
+          <a href="/contact.html" aria-current="page" class="underline underline-offset-4 decoration-2 transition hover:text-white">Contact</a>
+          <a href="/realproject.html" class="transition hover:text-white">Projects</a>
+          
+        </nav>
+
+        <div class="md:hidden">
+          <input id="mobile-menu" type="checkbox" class="peer sr-only" />
+          <label
+            for="mobile-menu"
+            aria-label="Toggle navigation menu"
+            class="relative z-50 flex size-11 cursor-pointer flex-col items-center justify-center gap-1.5 rounded-full border border-white/30 transition hover:bg-white hover:text-black"
+          >
+            <span class="h-0.5 w-5 bg-current"></span>
+            <span class="h-0.5 w-5 bg-current"></span>
+            <span class="h-0.5 w-5 bg-current"></span>
+          </label>
+
+          <label
+            for="mobile-menu"
+            aria-label="Close navigation menu"
+            class="fixed inset-0 z-40 invisible pointer-events-none cursor-pointer bg-black/60 opacity-0 transition-opacity peer-checked:visible peer-checked:pointer-events-auto peer-checked:opacity-100"
+          ></label>
+          <nav
+            aria-label="Mobile navigation"
+            class="fixed right-0 top-0 z-40 flex h-dvh w-[min(20rem,85vw)] translate-x-full flex-col gap-2 border-l border-white/15 bg-[#090909] px-8 pb-8 pt-24 text-lg capitalize text-white/80 shadow-2xl transition-transform duration-300 ease-out peer-checked:translate-x-0"
+          >
+            <a href="/index.html#about" class="rounded-lg px-3 py-3 transition hover:bg-white/10 hover:text-white">Home</a>
+            <a href="/contact.html" aria-current="page" class="rounded-lg px-3 py-3 underline underline-offset-4 decoration-2 transition hover:bg-white/10 hover:text-white">Contact</a>
+            <a href="/realproject.html" class="rounded-lg px-3 py-3 transition hover:bg-white/10 hover:text-white">Projects</a>
+          </nav>
+        </div>
+      </header>
+
+      <section class="mx-auto flex w-full max-w-7xl flex-1 flex-col justify-center px-6 py-8 sm:px-8 sm:py-10">
+        <div class="mb-8 font-extrabold sm:mb-10">
+          <p class="my-2 text-2xl tracking-wide sm:text-3xl md:text-4xl">GET IN TOUCH</p>
+          <h1 class="my-1 text-4xl leading-tight sm:text-5xl md:text-6xl">Have an idea?</h1>
+          <p class="my-1 text-4xl leading-tight text-white sm:text-5xl md:text-6xl">Let's talk.</p>
+        </div>
+
+        <div class="grid grid-cols-1 items-start gap-8 md:grid-cols-2 md:items-center md:gap-12">
+          <p class="max-w-xl text-xl font-bold leading-relaxed text-slate-300 sm:text-2xl md:text-3xl">
+            I&apos;m looking for mentorships, internships, and opportunities to build
+            alongside other people who care about making useful things.
+          </p>
+
+          <form action="" class="w-full rounded-3xl border border-gray-800 bg-black/20 p-5 shadow-sm shadow-white/20 backdrop-blur-xl sm:p-7">
+            <div class="space-y-5">
+              <div>
+                <label for="inquire_name" class="mb-2 block font-semibold">Your Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="inquire_name"
+                  placeholder="What's your name?"
+                  class="w-full rounded-xl border border-white/30 bg-black/30 px-4 py-3 text-base text-white placeholder:text-white/50 focus:border-white focus:outline-none"
+                  required
+                />
+              </div>
+              <div>
+                <label for="emailaddress" class="mb-2 block font-semibold">Email Address</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="emailaddress"
+                  placeholder="hello@something.com"
+                  class="w-full rounded-xl border border-white/30 bg-black/30 px-4 py-3 text-base text-white placeholder:text-white/50 focus:border-white focus:outline-none"
+                  required
+                />
+              </div>
+              <div>
+                <label for="emailmessage" class="mb-2 block font-semibold">Message</label>
+                <textarea
+                  name="message"
+                  id="emailmessage"
+                  placeholder="What would you like to talk about?"
+                  rows="4"
+                  minlength="15"
+                  class="w-full resize-y rounded-xl border border-white/30 bg-black/30 px-4 py-3 text-base text-white placeholder:text-white/50 focus:border-white focus:outline-none"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <button
+              type="submit"
+              class="mt-6 inline-flex min-h-12 w-full items-center justify-center rounded-full border border-white px-5 py-3 font-semibold transition hover:bg-white hover:text-black sm:w-auto"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
